@@ -1,0 +1,12 @@
+node_modules
+*.log
+schema/
+.jshintignore
+.jshintrc
+.lgtm
+Dockerfile
+.travis.yml
+CONTRIBUTING.md
+LICENSE
+README.md
+pelias.json
