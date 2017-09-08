@@ -36,11 +36,6 @@ if( 'exitCode' in args ){
 } else {
   startTiming();
 
-  if (peliasConfig.imports.openaddresses.hasOwnProperty('adminLookup')) {
-    logger.info('imports.openaddresses.adminLookup has been deprecated, ' +
-                'enable adminLookup using imports.adminLookup.enabled = true');
-  }
-
   var files = parameters.getFileList(peliasConfig, args);
 
   var deduplicator = deduplicatorStream.create(peliasConfig, addressDeduplicator);
